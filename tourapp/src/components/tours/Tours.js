@@ -1,17 +1,19 @@
 import "./Tours.css";
+import Tour from "./tour/Tour";
+
 
 function Tours(props) {
-    let item =props.dataFromHomeComponent ;
-    console.log();
-  return (
-      <>
-      <div className="tour">
-          <h2>{item.name}</h2>
-          <img src={item.image} alt="" />
-      </div>
-      </>
-    
-  )
+    return (
+        <>
+<h1>dddddd</h1>
+            {
+                props.dataFromHome.map(item => {
+                    return <Tour key={item.id} objectFromTours={item}  />
+                })
+
+            }
+        </>
+    )
 }
 
 export default Tours
