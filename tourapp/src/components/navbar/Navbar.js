@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 
-
-function Navbar(props)  {
+function Navbar(props) {
     return (
-       <div className="header">
-           <h1>Tour App</h1>
-       </div>
-      
+      <nav className="navbar">
+          <h1>Tour App</h1>
+          <div className="links">
+              <Link style={{color :"white" , margin:"10px" }} to="/" >Home</Link>
+              
+          </div>
+      </nav>
+
     );
-  }
-  
-  export default Navbar
+}
+
+export default Navbar

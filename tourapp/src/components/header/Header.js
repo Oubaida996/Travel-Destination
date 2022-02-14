@@ -1,9 +1,10 @@
 import "./Header.css";
+import Navbar from "../navbar/Navbar";
 
 function Header(props)  {
   return (
      <div className="header">
-         <h1>Tour App</h1>
+         <Navbar />
      </div>
     
   )
